@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DormitoryDataSet" targetNamespace="http://tempuri.org/DormitoryDataSet.xsd" xmlns:mstns="http://tempuri.org/DormitoryDataSet.xsd" xmlns="http://tempuri.org/DormitoryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DormitoryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DormitoryDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DormitoryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Students" msprop:Generator_RowEvHandlerName="StudentsRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentsRowDeleted" msprop:Generator_RowDeletingName="StudentsRowDeleting" msprop:Generator_RowEvArgName="StudentsRowChangeEvent" msprop:Generator_TablePropName="Students" msprop:Generator_RowChangedName="StudentsRowChanged" msprop:Generator_UserTableName="Students" msprop:Generator_RowChangingName="StudentsRowChanging" msprop:Generator_RowClassName="StudentsRow" msprop:Generator_TableClassName="StudentsDataTable" msprop:Generator_TableVarName="tableStudents">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_студента" msdata:AutoIncrement="true" msprop:Generator_ColumnPropNameInTable="Код_студентаColumn" msprop:Generator_ColumnPropNameInRow="Код_студента" msprop:Generator_UserColumnName="Код_студента" msprop:Generator_ColumnVarNameInTable="columnКод_студента" type="xs:int" />
+              <xs:element name="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_UserColumnName="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО" type="xs:string" minOccurs="0" />
+              <xs:element name="Дата_рождения" msprop:Generator_ColumnPropNameInTable="Дата_рожденияColumn" msprop:Generator_ColumnPropNameInRow="Дата_рождения" msprop:Generator_UserColumnName="Дата_рождения" msprop:Generator_ColumnVarNameInTable="columnДата_рождения" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Пол" msprop:Generator_ColumnPropNameInTable="ПолColumn" msprop:Generator_ColumnPropNameInRow="Пол" msprop:Generator_UserColumnName="Пол" msprop:Generator_ColumnVarNameInTable="columnПол" type="xs:string" minOccurs="0" />
+              <xs:element name="Серия_паспорта" msprop:Generator_ColumnPropNameInTable="Серия_паспортаColumn" msprop:Generator_ColumnPropNameInRow="Серия_паспорта" msprop:Generator_UserColumnName="Серия_паспорта" msprop:Generator_ColumnVarNameInTable="columnСерия_паспорта" type="xs:long" minOccurs="0" />
+              <xs:element name="Номер_паспорта" msprop:Generator_ColumnPropNameInTable="Номер_паспортаColumn" msprop:Generator_ColumnPropNameInRow="Номер_паспорта" msprop:Generator_UserColumnName="Номер_паспорта" msprop:Generator_ColumnVarNameInTable="columnНомер_паспорта" type="xs:long" minOccurs="0" />
+              <xs:element name="Кем_выдан" msprop:Generator_ColumnPropNameInTable="Кем_выданColumn" msprop:Generator_ColumnPropNameInRow="Кем_выдан" msprop:Generator_UserColumnName="Кем_выдан" msprop:Generator_ColumnVarNameInTable="columnКем_выдан" type="xs:string" minOccurs="0" />
+              <xs:element name="Когда_выдан" msprop:Generator_ColumnPropNameInTable="Когда_выданColumn" msprop:Generator_ColumnPropNameInRow="Когда_выдан" msprop:Generator_UserColumnName="Когда_выдан" msprop:Generator_ColumnVarNameInTable="columnКогда_выдан" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Information" msprop:Generator_RowEvHandlerName="InformationRowChangeEventHandler" msprop:Generator_RowDeletedName="InformationRowDeleted" msprop:Generator_RowDeletingName="InformationRowDeleting" msprop:Generator_RowEvArgName="InformationRowChangeEvent" msprop:Generator_TablePropName="Information" msprop:Generator_RowChangedName="InformationRowChanged" msprop:Generator_UserTableName="Information" msprop:Generator_RowChangingName="InformationRowChanging" msprop:Generator_RowClassName="InformationRow" msprop:Generator_TableClassName="InformationDataTable" msprop:Generator_TableVarName="tableInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_записи" msdata:AutoIncrement="true" msprop:Generator_ColumnPropNameInTable="Код_записиColumn" msprop:Generator_ColumnPropNameInRow="Код_записи" msprop:Generator_UserColumnName="Код_записи" msprop:Generator_ColumnVarNameInTable="columnКод_записи" type="xs:int" />
+              <xs:element name="Код_студента" msprop:Generator_ColumnPropNameInTable="Код_студентаColumn" msprop:Generator_ColumnPropNameInRow="Код_студента" msprop:Generator_UserColumnName="Код_студента" msprop:Generator_ColumnVarNameInTable="columnКод_студента" type="xs:int" minOccurs="0" />
+              <xs:element name="Дата_заселения" msprop:Generator_ColumnPropNameInTable="Дата_заселенияColumn" msprop:Generator_ColumnPropNameInRow="Дата_заселения" msprop:Generator_UserColumnName="Дата_заселения" msprop:Generator_ColumnVarNameInTable="columnДата_заселения" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Дата_выселения" msprop:Generator_ColumnPropNameInTable="Дата_выселенияColumn" msprop:Generator_ColumnPropNameInRow="Дата_выселения" msprop:Generator_UserColumnName="Дата_выселения" msprop:Generator_ColumnVarNameInTable="columnДата_выселения" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Название_общежития" msprop:Generator_ColumnPropNameInTable="Название_общежитияColumn" msprop:Generator_ColumnPropNameInRow="Название_общежития" msprop:Generator_UserColumnName="Название_общежития" msprop:Generator_ColumnVarNameInTable="columnНазвание_общежития" type="xs:string" minOccurs="0" />
+              <xs:element name="Адрес_общежития" msprop:Generator_ColumnPropNameInTable="Адрес_общежитияColumn" msprop:Generator_ColumnPropNameInRow="Адрес_общежития" msprop:Generator_UserColumnName="Адрес_общежития" msprop:Generator_ColumnVarNameInTable="columnАдрес_общежития" type="xs:string" minOccurs="0" />
+              <xs:element name="Номер_комнаты" msprop:Generator_ColumnPropNameInTable="Номер_комнатыColumn" msprop:Generator_ColumnPropNameInRow="Номер_комнаты" msprop:Generator_UserColumnName="Номер_комнаты" msprop:Generator_ColumnVarNameInTable="columnНомер_комнаты" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Students" />
+      <xs:field xpath="mstns:Код_студента" />
+    </xs:unique>
+    <xs:unique name="InformationKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Information" />
+      <xs:field xpath="mstns:Код_записи" />
+    </xs:unique>
+    <xs:keyref name="FK_Students_Information" refer="Constraint1" msdata:ConstraintOnly="true" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:Information" />
+      <xs:field xpath="mstns:Код_студента" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
